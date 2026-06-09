@@ -66,9 +66,11 @@ if section == "🏆 Business Overview":
         orders_df = pd.read_csv(DATA_DIR / "orders_data.csv")
         products_df = pd.read_csv(DATA_DIR / "products_data.csv")
         sessions_df = pd.read_csv(DATA_DIR / "sessions_data.csv")
-        return customers_df, orders_df, products_df, sessions_df
+            
+        seg_table = pd.read_csv(DATA_DIR / "Segmentation Summary.csv")
+        return customers_df, orders_df, products_df, sessions_df, seg_table
     
-    customers_df, orders_df, products_df, sessions_df = load_data()
+    customers_df, orders_df, products_df, sessions_df, seg_table = load_data()
     
     # Deduplicate products before merging
     product_info_cols = ['product_id', 'category', 'subcategory', 'price', 'cost', 'Stocking_Date']
@@ -324,8 +326,6 @@ elif section == "🎯 Customer Segmentation":
 
     # Dashboard Layout
     st.markdown("<h3 style='text-align: center;'> 🎯 Customer Segmentation Analytics </h3>", unsafe_allow_html=True)
-    
-    seg_table = pd.read_csv("Segmentation Summary.csv")
     
     # Build Plot
     seg_table["text_label"] = (
