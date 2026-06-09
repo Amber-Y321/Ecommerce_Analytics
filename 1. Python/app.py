@@ -186,7 +186,8 @@ if section == "🏆 Business Overview":
     
     # Add total revenue trend line
     total_revenue_trend = sales_trend.groupby("order_date")["price"].sum().reset_index()
-    total_revenue_trend["numeric_date"] = pd.to_datetime(total_revenue_trend["order_date"]).view('int64') // 10**9
+    # total_revenue_trend["numeric_date"] = pd.to_datetime(total_revenue_trend["order_date"]).view('int64') // 10**9
+    total_revenue_trend["numeric_date"] = pd.to_datetime(total_revenue_trend["order_date"]).astype("int64") // 10**9
     
     model = LinearRegression()
     X = total_revenue_trend[["numeric_date"]]
