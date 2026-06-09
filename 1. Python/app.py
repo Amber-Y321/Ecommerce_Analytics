@@ -263,7 +263,7 @@ if section == "🏆 Business Overview":
     
     # Add total session trend line
     total_session_trend = session_trend.groupby("session_date")["sessions"].sum().reset_index()
-    total_session_trend["numeric_date"] = pd.to_datetime(total_session_trend["session_date"]).view('int64') // 10**9
+    total_session_trend["numeric_date"] = pd.to_datetime(total_session_trend["session_date"]).astype('int64') // 10**9
     
     model = LinearRegression()
     X = total_session_trend[["numeric_date"]]
