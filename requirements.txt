@@ -8,3 +8,4 @@ pyod
 openpyxl
 streamlit-option-menu
 openai
+holidays
