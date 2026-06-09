@@ -328,8 +328,8 @@ elif section == "🎯 Customer Segmentation":
     st.markdown("<h3 style='text-align: center;'> 🎯 Customer Segmentation Analytics </h3>", unsafe_allow_html=True)
     
     BASE_DIR = Path(__file__).resolve().parent
-    PROJECT_DIR = BASE_DIR.parent
-    DATA_DIR = PROJECT_DIR / "data"
+    # PROJECT_DIR = BASE_DIR.parent
+    DATA_DIR = BASE_DIR / "data"
     seg_table = pd.read_csv(DATA_DIR / "Segmentation Summary.csv")
     # Build Plot
     seg_table["text_label"] = (
