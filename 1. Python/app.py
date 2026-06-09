@@ -494,13 +494,11 @@ elif section == "🎯 Customer Segmentation":
         return response.choices[0].message.content
         
 
-    
-    
     with st.expander("🤖 GPT Segment Interpreter"):
         st.markdown("Ask GPT to interpret your customer segments:")
         if st.button("Generate Interpretation"):
             st.info("Generating GPT summary...")
-            gpt_response = generate_campaign_suggestions(seg_table,None)
+            gpt_response = generate_campaign_suggestions(seg_table,st.secrets["OPENAI_API_KEY"])
             st.markdown(gpt_response)
 
 
