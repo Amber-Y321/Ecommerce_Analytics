@@ -60,7 +60,7 @@ if section == "🏆 Business Overview":
     def load_data():
         BASE_DIR = Path(__file__).parent
         # PROJECT_DIR = BASE_DIR.parent
-        DATA_DIR = PROJECT_DIR / "data"
+        DATA_DIR = BASE_DIR / "data"
         
         customers_df = pd.read_csv(DATA_DIR / "customers_data.csv")
         orders_df = pd.read_csv(DATA_DIR / "orders_data.csv")
