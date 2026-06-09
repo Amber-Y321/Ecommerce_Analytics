@@ -57,10 +57,10 @@ if section == "🏆 Business Overview":
     # Load data
     @st.cache_data
     def load_data():
-        customers_df = pd.read_csv("customers_data.csv")
-        orders_df = pd.read_csv("orders_data.csv")
-        products_df = pd.read_csv("products_data.csv")
-        sessions_df = pd.read_csv("sessions_data.csv")
+        customers_df = pd.read_csv("Customer_Behavior_Dashboard/data/customers_data.csv")
+        orders_df = pd.read_csv("Customer_Behavior_Dashboard/data/orders_data.csv")
+        products_df = pd.read_csv("Customer_Behavior_Dashboard/data/products_data.csv")
+        sessions_df = pd.read_csv("Customer_Behavior_Dashboard/data/sessions_data.csv")
         return customers_df, orders_df, products_df, sessions_df
     
     customers_df, orders_df, products_df, sessions_df = load_data()
