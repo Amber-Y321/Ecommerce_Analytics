@@ -9,7 +9,9 @@
 # Ecommerce Analytics Command Center
 
 > An **Interactive Analytics** solution designed to support customer insights, retention strategy, merchandising decisions, and executive reporting for a fashion ecommerce business.
+
 > Live Dashboard: https://customerbehaviordashboard-8bjy55yxhwipngfdgaebxp.streamlit.app/
+
 > GitHub Repository: 
 ---
 
