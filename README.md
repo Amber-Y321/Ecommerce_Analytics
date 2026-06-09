@@ -6,9 +6,9 @@
 
 &#x20;
 
-# Shopify Business Analytics Dashboard
+# Ecommerce Analytics Command Center
 
-> A **Streamlit** application that provides a full-stack analytics for LuxCouture - a Shopify-style E-commerce platform. Built with **Python** and **Streamlit**, it transforms retail and Shopify data into clear and efficient visualization dashboards,  empowering small businesses to optimize marketing strategies and boost popularity and sales.
+> An **Interactive Analytics** solution designed to support customer insights, retention strategy, merchandising decisions, and executive reporting for a fashion ecommerce business.
 
 ---
 
