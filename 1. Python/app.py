@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from itertools import combinations
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from pathlib import Path
 
 st.set_page_config(page_title="Shopify Business Dashboard", layout="wide")
 
@@ -57,10 +58,13 @@ if section == "🏆 Business Overview":
     # Load data
     @st.cache_data
     def load_data():
-        customers_df = pd.read_csv("Customer_Behavior_Dashboard/data/customers_data.csv")
-        orders_df = pd.read_csv("Customer_Behavior_Dashboard/data/orders_data.csv")
-        products_df = pd.read_csv("Customer_Behavior_Dashboard/data/products_data.csv")
-        sessions_df = pd.read_csv("Customer_Behavior_Dashboard/data/sessions_data.csv")
+        BASE_DIR = Path(__file__).parent
+        DATA_DIR = BASE_DIR / "data"
+        
+        customers_df = pd.read_csv(DATA_DIR / "customers_data.csv")
+        orders_df = pd.read_csv(DATA_DIR / "orders_data.csv")
+        products_df = pd.read_csv(DATA_DIR / "products_data.csv")
+        sessions_df = pd.read_csv(DATA_DIR / "sessions_data.csv")
         return customers_df, orders_df, products_df, sessions_df
     
     customers_df, orders_df, products_df, sessions_df = load_data()
