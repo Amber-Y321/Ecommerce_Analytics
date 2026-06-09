@@ -58,7 +58,7 @@ if section == "🏆 Business Overview":
     # Load data
     @st.cache_data
     def load_data():
-        BASE_DIR = Path(__file__).resolve().parent
+        #BASE_DIR = Path(__file__).resolve().parent
         PROJECT_DIR = BASE_DIR.parent
         DATA_DIR = PROJECT_DIR / "data"
         
