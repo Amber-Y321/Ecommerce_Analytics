@@ -338,9 +338,8 @@ if page == "1. Executive Overview":
     st.title("Executive Overview")
     st.markdown("""
     <div class="business-box">
-    <b>Business question:</b> Is the business healthy, and where should leadership focus first?<br><br>
-    This page is designed as the owner's Monday-morning view: overall performance, growth direction,
-    revenue mix, and the first signals that require deeper investigation.
+    This page is for owner's every morning view: <b>Is the business healthy?</b> <br><br>
+    With overall performance, growth direction and revenue mix, one can get the first signals that require deeper investigation.
     </div>
     """, unsafe_allow_html=True)
 
