@@ -546,7 +546,7 @@ if page == "1. Executive Overview":
     if page1_orders.empty:
         st.warning("No orders match the selected filters.")
     else:
-        t1, t2, t3 = st.columns(3)
+        t1, t2, t3 = st.rows(3)
         with t1:
             st.plotly_chart(make_monthly_revenue_chart(page1_orders), use_container_width=True)
         with t2:
