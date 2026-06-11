@@ -545,15 +545,19 @@ if page == "1. Executive Overview":
 
     if page1_orders.empty:
         st.warning("No orders match the selected filters.")
+    # else:
+    #     t1, t2, t3 = st.columns(3)
+    #     with t1:
+    #         st.plotly_chart(make_monthly_revenue_chart(page1_orders), use_container_width=True)
+    #     with t2:
+    #         st.plotly_chart(make_monthly_orders_chart(page1_orders), use_container_width=True)
+    #     with t3:
+    #         st.plotly_chart(make_monthly_aov_chart(page1_orders), use_container_width=True)
     else:
-        t1, t2, t3 = st.rows(3)
-        with t1:
-            st.plotly_chart(make_monthly_revenue_chart(page1_orders), use_container_width=True)
-        with t2:
-            st.plotly_chart(make_monthly_orders_chart(page1_orders), use_container_width=True)
-        with t3:
-            st.plotly_chart(make_monthly_aov_chart(page1_orders), use_container_width=True)
-
+        st.plotly_chart(make_monthly_revenue_chart(page1_orders), use_container_width=True)
+        st.plotly_chart(make_monthly_orders_chart(page1_orders), use_container_width=True)
+        st.plotly_chart(make_monthly_aov_chart(page1_orders), use_container_width=True)
+        
     st.subheader("2. Revenue concentration risk")
     st.markdown("""
     <div class="insight-box">
