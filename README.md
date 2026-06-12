@@ -7,14 +7,11 @@
 &#x20;
 
 # Ecommerce Analytics Command Center
+🔗 Live Dashboard: https://ecommerceanalytics-mdjdkr9yopuaqjaddvujmg.streamlit.app/
 
->An **Interactive Analytics Command Center** designed for a growing fashion ecommerce business that lacked a centralized view of customer behavior, revenue performance, and retention opportunities.
->
->The dashboard was built using realistically simulated ecommerce data modeled after actual operational patterns and business challenges.
->
-> Live Dashboard: https://customerbehaviordashboard-8bjy55yxhwipngfdgaebxp.streamlit.app/
->
-> GitHub Repository: 
+This project demonstrates how analytics can support real business decisions faced by boutique retailers, including growth strategy, marketing allocation, and store relocation planning.
+
+Using realistically simulated ecommerce data modeled after actual operational patterns, I built an interactive dashboard designed to answer four key business questions:
 ---
 
 ## 🔑 Key Features
