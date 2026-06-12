@@ -12,8 +12,14 @@
 This project demonstrates how analytics can support real business decisions faced by boutique retailers, including growth strategy, marketing allocation, and store relocation planning.
 
 >Using realistically simulated ecommerce data modeled after actual operational patterns, I built an interactive dashboard designed to answer four key business questions:
----
+Business Questions
 
+* 📈 Is the business healthy, and where should leadership focus first?
+* 💰 Which product categories should the business continue investing in?
+* 📣 How should limited marketing budgets be allocated?
+* 🏪 Would relocating the business improve profitability?
+
+  
 ## 🔑 Key Features
 > **Interactive Charts**: Hover for detailed deltas and explore daily or weekly performance shifts.
 
